@@ -13,7 +13,10 @@
             <h4>{{product.info}}</h4>
             <a href="#">Read More -></a>
         </div>
+        <button onclick="window.location.href='{%url 'product-update' product.id%}'"
+            class="product-update-link">Update</button>
     </div>
+
     {%endfor%}
 
 </div>

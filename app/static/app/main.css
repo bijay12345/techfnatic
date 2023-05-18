@@ -31,6 +31,12 @@ button {
     border: 1px solid #a7161a;
     padding: 5px 10px;
     border-radius: 5px !important;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #a7161a;
+    color: #fff;
 }
 
 .body {
@@ -435,6 +441,56 @@ footer {
     color: #a7161a;
 }
 
+.product-update-link {
+    padding: 10px 30px;
+    border: 1px solid #a7161a;
+    margin: 10px;
+}
+
+/* Product Update  */
+.admin-product-update {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admin-product-update h2 {
+    text-align: center;
+    font-weight: 800;
+}
+
+.admin-product-update img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.admin-product-update form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.admin-product-update form input {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid rgb(79, 192, 237);
+}
+
+.admin-product-update form input:hover {
+    box-shadow: 1px 3px 1px rgb(79, 192, 237);
+}
+
+.admin-product-update form input[type="checkbox"] {
+    margin: 20px 0 3px 0;
+    width: fit-content;
+}
+
+.admin-product-update form button {
+    width: 200px;
+    margin: 20px auto;
+}
 
 /* MEDIA QUERY */
 

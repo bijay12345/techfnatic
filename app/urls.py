@@ -17,4 +17,5 @@ urlpatterns = [
         views.WebsiteImagesUpdate,
         name="website-image-add",
     ),
+    path("product/update/<int:id>/", views.productUpdateView, name="product-update"),
 ]

@@ -17,6 +17,10 @@ class AdminInfoUpdateForm(forms.ModelForm):
 
 
 class ProductForm(forms.ModelForm):
+    title = forms.CharField(required=False)
+    info = forms.CharField(required=False)
+    image = forms.FileField(required=False)
+
     class Meta:
         model = Product
         fields = ["title", "info", "image"]

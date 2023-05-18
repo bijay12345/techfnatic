@@ -71,3 +71,17 @@ def WebsiteImagesUpdate(request, id):
         if form.is_valid():
             form.save()
     return redirect("admin")
+
+
+def productUpdateView(request, id):
+    product = get_object_or_404(Product, id=id)
+    if request.method == "POST":
+        form = ProductForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            form.save()
+            return redirect("admin")
+    else:
+        form = ProductForm(instance=product)
+    return render(
+        request, "app/product_update.html", {"form": form, "product": product}
+    )
